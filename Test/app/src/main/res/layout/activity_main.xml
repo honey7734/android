@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical">
-<EditText
-    android:id="@+id/edit"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="여기다 입력" />
-<Button
-    android:id="@+id/btn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="입력 완료"
-    android:onClick="mOnClick"/>
+    android:src="@drawable/dog" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textColor="#882C2C2C"
+        android:textSize="20sp" />
 
+    <EditText
+        android:id="@+id/inputID"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:textColor="#882C2C2C"
+    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputPw"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/button"
-        android:layout_width="164dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="210dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="245dp"
-        android:background="@drawable/button1"
-        android:text="Button"
-        android:textColor="#FFFFFF"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:onClick="login"
+        android:backgroundTint="#50808080"
+        android:textColor="@color/black"
 
-        />
+    />
 </LinearLayout>
