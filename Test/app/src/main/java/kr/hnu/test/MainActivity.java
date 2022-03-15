@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.relative_layout0315);
     }
 /*    public void mOnClick(View v) {
         EditText edit = (EditText) findViewById(R.id.edit);
