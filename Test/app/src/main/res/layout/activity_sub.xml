@@ -7,13 +7,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="메인액티비티입니다."
-        android:textSize="30sp"
-        android:textColor="#ff0000"/>
+        android:text="메인에서호출한서브입니다."
+        android:textSize="20sp"
+        android:textColor="#00ff00"/>
     <Button
-        android:id="@+id/call"
+        android:id="@+id/close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="mOnClick"
-        android:text="Call"/>
+        android:text="Close"/>
 </LinearLayout>
