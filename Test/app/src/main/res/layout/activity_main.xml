@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dog" />
     <TextView
-        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sample"
-        />
+        android:text="ID"
+        android:textColor="#882C2C2C"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputID"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:textColor="#882C2C2C"
+    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputPw"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/btnedit"
-        android:layout_width="match_parent"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="mOnClick"
-        android:text="Edit"
-        />
+        android:text="login"
+        android:onClick="login"
+        android:backgroundTint="#50808080"
+        android:textColor="@color/black"
+
+    />
 </LinearLayout>
