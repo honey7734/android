@@ -1,43 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/dog" />
-    <TextView
-        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignLeft="@id/textID"
+        android:layout_alignBottom="@id/inputID"
+
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="20px"
+        android:layout_marginBottom="20px"
+        android:layout_toLeftOf="@id/inputID"
+        android:gravity="left"
+        android:padding="10px"
         android:text="ID"
         android:textColor="#882C2C2C"
         android:textSize="20sp" />
-
     <EditText
         android:id="@+id/inputID"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
         android:layout_width="267dp"
         android:layout_height="wrap_content" />
 
     <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Password"
-    android:textColor="#882C2C2C"
-    android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/inputPw"
-        android:layout_width="267dp"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn"
+        android:id="@+id/textID"
+        android:layout_toLeftOf="@id/inputPw"
+        android:layout_below="@id/inputID"
+        android:layout_alignBottom="@id/inputPw"
+        android:gravity="left"
+        android:padding="10px"
+        android:layout_margin="20px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:onClick="login"
+        android:text="암호"
+        android:textColor="#882C2C2C"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/inputPw"
+        android:layout_below="@id/inputID"
+        android:layout_centerHorizontal="true"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="true"
+        android:width="500dp"
         android:backgroundTint="#50808080"
+        android:onClick="login"
+        android:textSize="30dp"
         android:textColor="@color/black"
 
-    />
-</LinearLayout>
+        android:text="로그인"></Button>
+</RelativeLayout>

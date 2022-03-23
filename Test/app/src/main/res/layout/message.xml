@@ -3,24 +3,26 @@
     android:id="@+id/relative"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <ImageView
-        android:id="@+id/picture"
+        android:id="@+id/messageImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="70px"
-        android:adjustViewBounds="true"
+        android:layout_marginTop="0.5dp"
         android:layout_marginRight="10dip"
-        android:src="@drawable/face3"
-        />
+        android:adjustViewBounds="true"
+        android:maxWidth="110px"
+        android:src="@drawable/nico" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/picture"
+        android:layout_toRightOf="@id/messageImg"
         android:text="내 롤모델입니다"
         android:textColor="#00ff00"
         android:textSize="12sp" />
+
     <TextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
@@ -29,6 +31,6 @@
         android:layout_alignLeft="@id/desc"
         android:textSize="20sp"
         android:textColor="#ffff00"
-        android:text="어쩌구 저쩌구"
+        android:text=""
         />
 </RelativeLayout>
