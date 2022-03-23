@@ -9,12 +9,10 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/btnnewmessage"
+            android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:text="Button"
             android:onClick="mOnClick"/>
     </LinearLayout>
 </ScrollView>
-
-    <!-- Jack은 Intent로 받은 값이 되어야함-->
