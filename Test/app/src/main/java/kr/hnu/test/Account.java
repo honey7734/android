@@ -19,5 +19,11 @@ public class Account implements Serializable {
         return pw;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
+    public void setPw(String pw) {
+        this.pw = pw;
+    }
 }

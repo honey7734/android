@@ -14,22 +14,22 @@
         android:src="@drawable/hannam" />
 
     <EditText
-        android:id="@+id/inputId"
+        android:id="@+id/id"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:hint="ID"
+        android:drawableStart="@drawable/id"
 
-        android:drawableStart="@drawable/id" />
+        android:hint="ID" />
 
 
     <EditText
-        android:id="@+id/inputPw"
+        android:id="@+id/pw"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputId"
+        android:layout_below="@id/id"
         android:layout_centerHorizontal="true"
         android:drawableStart="@drawable/pw"
 
@@ -40,7 +40,7 @@
         android:id="@+id/loginbtn"
         android:layout_width="380dp"
         android:layout_height="80dp"
-        android:layout_below="@id/inputPw"
+        android:layout_below="@id/pw"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/blue"

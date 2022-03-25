@@ -41,12 +41,13 @@
             android:layout_height="wrap_content"
             android:background="@color/blue"
             android:text="check"
+            android:onClick="check"
             android:textColor="@color/white"/>
 
     </LinearLayout>
 
     <EditText
-        android:id="@+id/inputpw"
+        android:id="@+id/inputPw"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

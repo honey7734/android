@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".MainActivity" android:label="Title of Main Activity" />
         <activity android:name=".SubActivity" android:label="Title of Sub Activity" />
+        <activity android:name=".HnuSignupActivity" android:label="Title of Sub Activity" />
     </application>
 
 </manifest>
