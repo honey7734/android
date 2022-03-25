@@ -1,9 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HnuMailActivity">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/blue"
+        android:paddingTop="18dp"
+        android:paddingLeft="100dp"
+        android:text="받은 메세지 함"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        >
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/messageImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="110px"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="2019-03-27 14:57:24"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10dp" />
+
+        <!--메일 보낸이-->
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messageImg"
+            android:text="aaa"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <!--메일 제목-->
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_alignLeft="@id/desc"
+            android:text="title is here"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        >
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/messageImg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="110px"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="2019-03-27 14:57:24"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10dp" />
+
+        <!--메일 보낸이-->
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messageImg2"
+            android:text="aaa"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <!--메일 제목-->
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc2"
+            android:layout_alignLeft="@id/desc2"
+            android:text="title is here"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/messageImg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="110px"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="2019-03-27 14:57:24"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10dp" />
+
+        <!--메일 보낸이-->
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messageImg3"
+            android:text="aaa"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <!--메일 제목-->
+        <TextView
+            android:id="@+id/content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc3"
+            android:layout_alignLeft="@id/desc3"
+            android:text="title is here"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

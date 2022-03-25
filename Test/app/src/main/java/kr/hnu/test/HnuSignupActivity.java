@@ -23,13 +23,6 @@ public class HnuSignupActivity extends AppCompatActivity {
 
         editId= (EditText) findViewById(R.id.inputId);
         editPw= (EditText) findViewById(R.id.inputPw);
-        Account account= (Account) getIntent().getSerializableExtra("AccountIn");
-        if(account.getId() != null) {
-            editId.setText(account.getId());
-        }
-        if(account.getPw() != null) {
-            editPw.setText(account.getPw());
-        }
 
     }
 

@@ -65,8 +65,6 @@ public class HnuMainActivity extends AppCompatActivity {
 
     public void signUp(View v) {
         Intent intent = new Intent(this, HnuSignupActivity.class);
-        intent.putExtra("AccountIn",
-                new Account(textId.getText().toString(), textPw.getText().toString()));
         activityResultLauncher.launch(intent);
 
     }
