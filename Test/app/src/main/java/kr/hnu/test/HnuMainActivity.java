@@ -51,7 +51,10 @@ public class HnuMainActivity extends AppCompatActivity {
         String id = textId.getText().toString();
         String pw = textPw.getText().toString();
         if(id.equals(intentId) && pw.equals(intentPw)){
-            Toast.makeText(getApplicationContext(), "로그인 되었습니다", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "로그인 되었습니다", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, HnuMailActivity.class);
+            startActivity(intent);
+
         }else{
             Toast.makeText(getApplicationContext(), "잘못 입력하였습니다.", Toast.LENGTH_SHORT).show();
         }
